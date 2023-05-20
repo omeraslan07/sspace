@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
-
-
+const register = () => {
+  return (
+    <View>
+      <Text>Hedef Sayfa</Text>
+    </View>
+  );
+};
 
 
 const LoginScreen = () => {
@@ -40,14 +45,15 @@ const LoginScreen = () => {
         onChangeText={(text) => setPassword(text)}
       />
       <TouchableOpacity style={styles.button} onPress={handleLogin}>
+        <Text style={styles.buttonText}>Register</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.button} onPress={handleLogin}>
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
       <View style={{ marginVertical: 10, paddingHorizontal: 20 }}>
-      {/* Bileşenler buraya gelecek */}
+      {/*  */}
     </View>
-      <TouchableOpacity style={styles.button} onPress={handleLogin}>
-        <Text style={styles.buttonText}>Register</Text>
-      </TouchableOpacity>
+      
     </View>
   );
 };
@@ -82,7 +88,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
     fontSize: 20,
-    textAlign : 'center',
+    textAlign: 'center',
     fontWeight: 'bold',
   },
   logo: {
